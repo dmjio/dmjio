@@ -1,13 +1,31 @@
-{-# LANGUAGE RecordWildCards #-}
---------------------------------------------------------------------------------
+{-# LANGUAGE RecordWildCards   #-}
 {-# LANGUAGE OverloadedStrings #-}
+------------------------------------------------------------------------------
+-- |
+-- Module      : Main
+-- Copyright   : (c) David Johnson 2015
+-- Maintainer  : djohnson.m@gmail.com
+-- Stability   : experimental
+-- Portability : POSIX
+-- 
+------------------------------------------------------------------------------
+module Main ( main ) where
+------------------------------------------------------------------------------
 import Data.Monoid
 import Data.Monoid (mappend)
 import Hakyll
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+-- | Configuration
+conf :: Configuration
+conf = defaultConfiguration {
+         deployCommand = "rsync -av _site/* root@dmj.io:/var/www/dmj.io/html/"
+       }
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith conf $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler

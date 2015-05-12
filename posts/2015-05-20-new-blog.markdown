@@ -3,8 +3,7 @@ title: New blog
 author: dmj`
 tags: hakyll, haskell
 ---
-This the first post of my new blog. Stay tuned for more !
+First post on the new blog. Stay tuned.
 <!--more-->
-This blog was built with the <a target="_blank"
-href="http://jaspervdj.be/hakyll">Hakyll</a>, a static site generator.
+This blog was built with the <a target="_blank" href="http://jaspervdj.be/hakyll">Hakyll</a>, a static site generator.
 
