@@ -1,27 +1,16 @@
+$title$
 <div class="posts">
     $for(posts)$
-    <div>
-        <h1 class="content-subhead"></h1>
+    <div class="brand-tagline">
                 <!-- A single blog post -->
                 <section class="post">
                     <header class="post-header">
-                      <img class="post-avatar"
-                           alt="Tilo Mitra&#x27;s avatar"
-                           height="48"
-                           width="48"
-                           src="/img/common/tilo-avatar.png">
-                      <h2 class="post-title"><a href="$url$">$title$</a></h2>
-                      <p class="post-meta">
-                            By <a href="#" class="post-author">$author$</a> under 
-                            <a href="$url$">Read More</a>
+                      <div>
                              $if(teaser)$
-                               $teaser$
-                             $else$
-                               $body$
+                             <p>$teaser$ <a href="$url$">read more...</a></p>
                              $endif$
-                      </p>
+                      </div>
                     </header>
-                    <div class="post-description">$teaser$</div>
                 </section>
     </div>
     $endfor$

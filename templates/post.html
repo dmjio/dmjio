@@ -1,16 +1,24 @@
-<div class="info">
-    Posted on $date$
+<h1 class="content-subhead"></h1>
+<div class="brand-tagline">
+                      <img class="post-avatar"
+                           alt="avatar"
+                           height="48"
+                           width="48"
+                           src="/images/$author$.png">
+
+  <h2 style="color : rgb(61, 79, 93)">$title$</h2>
+  Posted on <span style="color:rgb(61, 146, 201)">$date$</span>
     $if(author)$
-        by $author$
+        by <a href="#">$author$</a>
     $endif$
-</div>
-<div class="info">
   $if(tags)$
-  Tags: $tags$
+  under $tags$
   $endif$
 </div>
+<div style="color:rgb(61, 79, 93)">
 $body$
-<h2>Comments</h2>
+</div>
+<h2 style="text-align:center" class="brand-tagline">Comments</h2>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   /* * * CONFIGURATION VARIABLES * * */

@@ -24,8 +24,7 @@ main = hakyll $ do
       compile $ do
         posts <- recentFirst =<< loadAll pattern
         let ctx = constField "title" title
-                  `mappend` listField "posts" postCtx (return posts)
-                   <> teaserField "teaser" "content"
+                  `mappend` listField "posts" (postCtxWithTeaserAndTags tags) (return posts)
                   `mappend` defaultContext
         makeItem "" >>= loadAndApplyTemplate "templates/tag.html" ctx
                     >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -44,10 +43,9 @@ main = hakyll $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let archiveCtx =
-                    listField "posts" postCtx (return posts) `mappend`
+                    listField "posts" (postCtxWithTeaserAndTags tags) (return posts) `mappend`
                     constField "title" "Archives"            `mappend`
                     defaultContext
-
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
