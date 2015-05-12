@@ -1,1 +1,18 @@
-$partial("templates/post-list.html")$
+<p style="text-transform:uppercase; color:#aaa">All Posts</p>
+<div class="posts">
+    $for(posts)$
+   <h1 class="content-subhead"></h1>
+    <div class="brand-tagline">
+      <section class="post">
+        <header class="post-header">
+          <div>
+            $date$ - <a style="font-size:20px"
+            href="$url$">$title$</a> by $author$ under $tags$
+          </div>
+        </header>
+      </section>
+    </div>
+    $endfor$
+</div>
+
+

@@ -1,3 +1,28 @@
+.foo {
+    transition: background-color 1.5s ease;
+    color: white;
+}
+.foo:hover {
+    color: lightyellow;
+}
+
+.grower
+{
+    font-size:28px;
+
+    transition: width 1s ease;
+    -moz-transition: width 1s; /* Firefox 4 */
+    -webkit-transition: width 1s; /* Safari and Chrome */
+    -o-transition: width 1s; /* Opera */
+    -ms-transition: width 1s; /* IE9 (maybe) */
+
+}
+
+.grower:hover
+        {
+            font-size:36px;
+        }
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -173,3 +198,4 @@ h3 {
         bottom: 0;
     }
 }
+
