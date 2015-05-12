@@ -7,5 +7,5 @@ First post on the new blog. Stay tuned.
 <!--more-->
 This blog was built with <a target="_blank"
 href="http://jaspervdj.be/hakyll">Hakyll</a>, a static site generator.
-It's hosted with nginx, and uploaded via rsync.
+It is hosted with nginx, and deployed via rsync.
 
