@@ -6,6 +6,5 @@ cabal-version:      >= 1.10
 executable dmjio
   main-is:          site.hs
   build-depends:    base == 4.*
-                  , hakyll == 4.6.*
-  ghc-options:      -threaded
+                  , hakyll == 4.7.*
   default-language: Haskell2010
