@@ -1,7 +1,5 @@
 # dmjio
 
----
-
 I'm interested in:
   - Compilers
   - Web technologies
