@@ -1,8 +1,11 @@
+> [!IMPORTANT]
+> Check out the new [Haskell Miso Organization](https://github.com/haskell-miso) 🍜
+
 # dmjio
 
 I'm interested in:
   - Compilers
-  - Web technologies (as seen [here](https://github.com/haskell-miso) 🍜 )
+  - Web technologies
   - Algorithms & Data Structures
   - Static Analysis
   - Functional programming
