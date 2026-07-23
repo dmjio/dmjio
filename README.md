@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Check out the new [miso organization](https://github.com/haskell-miso) 🍜
+> Check out the new Haskell [miso organization](https://github.com/haskell-miso) 🍜
 
 # dmjio
 
